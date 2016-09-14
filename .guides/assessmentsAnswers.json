@@ -1,8 +1,148 @@
 [
  {
   "taskId": "test-3255134342",
-  "points": 0,
+  "points": 1,
   "results": [
+   {
+    "code": 0,
+    "output": "That is correct",
+    "timestamp": 1473893369493
+   },
+   {
+    "code": 0,
+    "output": "That is correct",
+    "timestamp": 1473893311434
+   },
+   {
+    "code": 1,
+    "output": "This is not correct. Please check the png file in the file tree to see the difference.",
+    "timestamp": 1473893293308
+   },
+   {
+    "code": 1,
+    "output": "This is not correct. Please check the png file in the file tree to see the difference.",
+    "timestamp": 1473893256009
+   },
+   {
+    "code": 0,
+    "output": "That is correct",
+    "timestamp": 1473893235591
+   },
+   {
+    "code": 0,
+    "output": "",
+    "timestamp": 1473892834593
+   },
+   {
+    "code": 0,
+    "output": "",
+    "timestamp": 1473892811892
+   },
+   {
+    "code": 0,
+    "output": "Hello casperjs test test.js --folder= $1",
+    "timestamp": 1473892692998
+   },
+   {
+    "code": 0,
+    "output": "",
+    "timestamp": 1473892661717
+   },
+   {
+    "code": 0,
+    "output": "",
+    "timestamp": 1473892629064
+   },
+   {
+    "code": 127,
+    "output": "Terminated by timeout",
+    "timestamp": 1473892033483
+   },
+   {
+    "code": 127,
+    "output": "Terminated by timeout",
+    "timestamp": 1473891979519
+   },
+   {
+    "code": 1,
+    "output": "\u001b[33m# Tags\u001b[0m\n\u001b[32;1mPASS\u001b[0m Tags \u001b[32;1m(NaN test)\u001b[0m\nFailure! Saved to /home/codio/workspace/list1/body_0.fail.png\n\n\n\u001b[37;41;1mFAIL\u001b[0m Visual change found for screenshot ./screenshots/body_0.png (0.11% mismatch)\n\u001b[33m#    type: fail\u001b[0m\n\u001b[33m#    file: test1.js\u001b[0m\n\u001b[33m#    subject: false\u001b[0m\n\nPhantomCSS found 1 tests, 1 of them failed.\n\nPhantomCSS has created some images that try to show the difference (in the directory /home/codio/workspace/list1). Fuchsia colored pixels indicate a difference betwen the new and old screenshots.\nThis is not correct. Please check the png file in the file tree to see the difference.\n\u001b[33m⚠  done() `planned` arg is deprecated as of 1.1\u001b[0m\n\u001b[37;41;1mFAIL 1 test executed in 4.592s, 0 passed, 1 failed, 0 dubious, 0 skipped.       \u001b[0m\n\u001b[36m\nDetails for the 1 failed test:\n\u001b[0m\nIn test1.js\n\u001b[36m  Tags\u001b[0m\n\u001b[33m    fail: Visual change found for screenshot ./screenshots/body_0.png (0.11% mismatch)\u001b[0m",
+    "timestamp": 1473890689776
+   },
+   {
+    "code": 0,
+    "output": "\u001b[33m# Tags\u001b[0m\n\u001b[32;1mPASS\u001b[0m Tags \u001b[32;1m(NaN test)\u001b[0m\n\n\n\u001b[32;1mPASS\u001b[0m No changes found for screenshot ./screenshots/body_0.png\n\nPhantomCSS found 1 tests, None of them failed. Which is good right?\n\nIf you want to make them fail, change some CSS.\nThat is correct\n\u001b[33m⚠  done() `planned` arg is deprecated as of 1.1\u001b[0m\n\u001b[37;42;1mPASS 1 test executed in 1.999s, 1 passed, 0 failed, 0 dubious, 0 skipped.       \u001b[0m",
+    "timestamp": 1473890653766
+   },
+   {
+    "code": 0,
+    "output": "That is correct",
+    "timestamp": 1473890617246
+   },
+   {
+    "code": 0,
+    "output": "That is correct",
+    "timestamp": 1473890582255
+   },
+   {
+    "code": 0,
+    "output": "That is correct",
+    "timestamp": 1473890559829
+   },
+   {
+    "code": 0,
+    "output": "rm: cannot remove ‘/home/codio/workspace/list1/*.png’: No such file or directory\nThat is correct",
+    "timestamp": 1473890399157
+   },
+   {
+    "code": 1,
+    "output": "rm: cannot remove ‘/home/codio/workspace/list1/*.png’: No such file or directory\nfailed",
+    "timestamp": 1473890082375
+   },
+   {
+    "code": 1,
+    "output": "failed",
+    "timestamp": 1473890082331
+   },
+   {
+    "code": 1,
+    "output": "rm: cannot remove ‘/home/codio/workspace/list1/*.png’: No such file or directory\nfailed",
+    "timestamp": 1473890052537
+   },
+   {
+    "code": 0,
+    "output": "That is correct",
+    "timestamp": 1473890035329
+   },
+   {
+    "code": 1,
+    "output": "failed",
+    "timestamp": 1473890001978
+   },
+   {
+    "code": 1,
+    "output": "failed",
+    "timestamp": 1473889958976
+   },
+   {
+    "code": 1,
+    "output": "failed",
+    "timestamp": 1473889910641
+   },
+   {
+    "code": 1,
+    "output": "rm: cannot remove ‘/home/codio/workspace/list1/*.png’: No such file or directory\n[\n {\n  \"success\": false,\n  \"type\": \"fail\",\n  \"standard\": \"explicit call to fail()\",\n  \"message\": \"Visual change found for screenshot ./screenshots/body_0.png (0.16% mismatch)\",\n  \"file\": \"test1.js\",\n  \"doThrow\": true,\n  \"values\": {\n   \"subject\": false\n  },\n  \"suite\": \"Tags\",\n  \"time\": 4101\n }\n]",
+    "timestamp": 1473889724256
+   },
+   {
+    "code": 0,
+    "output": "Well done, this is correct.",
+    "timestamp": 1473889686437
+   },
+   {
+    "code": 1,
+    "output": "rm: cannot remove ‘/home/codio/workspace/list1/*.png’: No such file or directory\n[\n {\n  \"success\": false,\n  \"type\": \"fail\",\n  \"standard\": \"explicit call to fail()\",\n  \"message\": \"Visual change found for screenshot ./screenshots/body_0.png (0.16% mismatch)\",\n  \"file\": \"test1.js\",\n  \"doThrow\": true,\n  \"values\": {\n   \"subject\": false\n  },\n  \"suite\": \"Tags\",\n  \"time\": 5435\n }\n]",
+    "timestamp": 1473889566661
+   },
    {
     "code": 1,
     "output": "\u001b[37;41;1mFAIL\u001b[0m SyntaxError: Parse error\n\u001b[33m#    type: error\u001b[0m\n\u001b[33m#    file: test1.js\u001b[0m\n\u001b[33m#    subject: false\u001b[0m\n\u001b[33m#    error: \"SyntaxError: Parse error\"\u001b[0m\n\u001b[33m#    stack: \u001b[0m\n\u001b[37;41;1mFAIL 1 test executed in 0.025s, 0 passed, 1 failed, 0 dubious, 0 skipped.       \u001b[0m\n\u001b[36m\nDetails for the 1 failed test:\n\u001b[0m\nIn test1.js\n\u001b[36m  Untitled suite in test1.js\u001b[0m\n\u001b[33m    error: SyntaxError: Parse error\u001b[0m",

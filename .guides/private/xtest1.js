@@ -1,39 +1,37 @@
+
+// Suppress console.log
 const log_original = console.log
+
+// Alternate function to call to send console messages back to Guide
 const log = function() {
   return log_original.apply(console, arguments)
 }
-
 console.log = function () {}
 
+// Start web server
 var phantomcss = require('phantomcss');
 var http = require('webserver').create();
 const PORT = 3000
 
-
 function handleRequest(request, response){
   response.statusCode = 200
-  //response.setHeader('Content-Type', 'text/html; charset=utf-8')
   response.write(fs.read('/home/codio/workspace/' + request.url))
   response.close()
 }
 http.listen(PORT, handleRequest);
 
-
-// CONFIG
-
-
-
 // start a casper test
 casper.test.begin('Tags', function(test) {
   var failures = [];
-  var fobj = object;
   
   casper.test.on("fail", function(failure) {
-    fobj = casper.test.getFailures()
     failures.push(failure);
   });
   
   phantomcss.init({
+    //screenshotRoot: fs.absolute('/home/codio/workspace/.guides/x'),
+    //comparisonResultRoot: fs.absolute('/home/codio/workspace/.guides/y'),
+    failedComparisonsRoot: fs.absolute('/home/codio/workspace/list1'),
     rebase: casper.cli.get('rebase')
   });
 
@@ -61,10 +59,10 @@ casper.test.begin('Tags', function(test) {
   casper.run(function() {
     var exitCode = 0;
     if (failures.length > 0) {
-      log(util.inspect(failures)
+      log('failed')
       exitCode = 1;
     } else {
-      log('Well done, this is correct.')
+      log('That is correct')
     }
     casper.test.done(exitCode);
   });

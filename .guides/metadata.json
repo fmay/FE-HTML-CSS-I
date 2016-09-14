@@ -3,7 +3,13 @@
   {
    "id": "94222416-f5a9-3bfb-9790-3a2dad2955a1",
    "title": "Lists - Instructions",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Lists---Instructions-9422.md",

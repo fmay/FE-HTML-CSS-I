@@ -1,18 +1,20 @@
+
+// Suppress console.log
 const log_original = console.log
+
+// Alternate function to call to send console messages back to Guide
 const log = function() {
   return log_original.apply(console, arguments)
 }
-
 console.log = function () {}
 
+// Start web server
 var phantomcss = require('phantomcss');
 var http = require('webserver').create();
 const PORT = 3000
 
-
 function handleRequest(request, response){
   response.statusCode = 200
-  //response.setHeader('Content-Type', 'text/html; charset=utf-8')
   response.write(fs.read('/home/codio/workspace/' + request.url))
   response.close()
 }
@@ -27,11 +29,13 @@ casper.test.begin('Tags', function(test) {
   });
   
   phantomcss.init({
+    failedComparisonsRoot: fs.absolute('/home/codio/workspace/' + casper.cli.get('folder') ),
+    mismatchTolerance: 0.2,
     rebase: casper.cli.get('rebase')
   });
 
   // open page
-  casper.start('http://localhost:3000/list1/list.html');
+  casper.start('http://localhost:3000/' + casper.cli.get('folder') + '/list.html');
 
   // set your preferred view port size
   casper.viewport(1024, 768);
@@ -54,10 +58,10 @@ casper.test.begin('Tags', function(test) {
   casper.run(function() {
     var exitCode = 0;
     if (failures.length > 0) {
-      log(JSON.stringify(failures, null, ' '))
+      log('This is not correct. Please check the png file in the file tree to see the difference.')
       exitCode = 1;
     } else {
-      log('Well done, this is correct.')
+      log('That is correct')
     }
     casper.test.done(exitCode);
   });

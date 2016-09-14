@@ -7,7 +7,7 @@
    "showName": false,
    "arePartialPointsAllowed": false,
    "instructions": "Once you have written your code, please press the button below.",
-   "command": "bash /home/codio/workspace/.guides/private/test1.sh",
+   "command": "bash /home/codio/workspace/.guides/private/test.sh list1",
    "points": 1
   }
  }
