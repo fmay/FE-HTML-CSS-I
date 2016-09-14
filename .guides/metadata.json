@@ -1,0 +1,80 @@
+{
+ "sections": [
+  {
+   "id": "94222416-f5a9-3bfb-9790-3a2dad2955a1",
+   "title": "Lists - Instructions",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Lists---Instructions-9422.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "7139fda9-e857-f1c6-4c26-76688fc36fe7",
+   "title": "HelvetiList",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "list1/list.html",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "list1/list.css",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels-tree",
+   "path": [
+    "list1"
+   ],
+   "type": "markdown",
+   "content-file": ".guides/content/HelvetiList-7139.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "d38ca124-87de-1604-08e2-69b8663429f1",
+   "title": "Thumbnail List",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Thumbnail-List-d38c.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "c8532308-75f5-bb64-78ca-5b62ca04200d",
+   "title": "Thumbnail Grid",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Thumbnail-Grid-c853.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  },
+  {
+   "id": "0ff401e8-d0eb-cc2b-5e91-eac4e13b033c",
+   "title": "New Section 5",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/New-Section-5-0ff4.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false
+  }
+ ],
+ "theme": "light",
+ "scripts": [],
+ "lexikonTopic": ""
+}

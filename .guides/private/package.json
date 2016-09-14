@@ -1,0 +1,12 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "list1.js",
+  "scripts": {
+    "start": "http-server /home/codio/workspace -p 3000",
+    "test": "casperjs test test1.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

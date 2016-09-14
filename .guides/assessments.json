@@ -1,0 +1,14 @@
+[
+ {
+  "type": "test",
+  "taskId": "test-3255134342",
+  "source": {
+   "name": "List1",
+   "showName": false,
+   "arePartialPointsAllowed": false,
+   "instructions": "Once you have written your code, please press the button below.",
+   "command": "bash /home/codio/workspace/.guides/private/test1.sh",
+   "points": 1
+  }
+ }
+]

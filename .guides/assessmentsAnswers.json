@@ -1,0 +1,79 @@
+[
+ {
+  "taskId": "test-3255134342",
+  "points": 0,
+  "results": [
+   {
+    "code": 1,
+    "output": "\u001b[37;41;1mFAIL\u001b[0m SyntaxError: Parse error\n\u001b[33m#    type: error\u001b[0m\n\u001b[33m#    file: test1.js\u001b[0m\n\u001b[33m#    subject: false\u001b[0m\n\u001b[33m#    error: \"SyntaxError: Parse error\"\u001b[0m\n\u001b[33m#    stack: \u001b[0m\n\u001b[37;41;1mFAIL 1 test executed in 0.025s, 0 passed, 1 failed, 0 dubious, 0 skipped.       \u001b[0m\n\u001b[36m\nDetails for the 1 failed test:\n\u001b[0m\nIn test1.js\n\u001b[36m  Untitled suite in test1.js\u001b[0m\n\u001b[33m    error: SyntaxError: Parse error\u001b[0m",
+    "timestamp": 1473875728471
+   },
+   {
+    "code": 1,
+    "output": "\u001b[37;41;1mFAIL\u001b[0m SyntaxError: Parse error\n\u001b[33m#    type: error\u001b[0m\n\u001b[33m#    file: test1.js\u001b[0m\n\u001b[33m#    subject: false\u001b[0m\n\u001b[33m#    error: \"SyntaxError: Parse error\"\u001b[0m\n\u001b[33m#    stack: \u001b[0m\n\u001b[37;41;1mFAIL 1 test executed in 0.021s, 0 passed, 1 failed, 0 dubious, 0 skipped.       \u001b[0m\n\u001b[36m\nDetails for the 1 failed test:\n\u001b[0m\nIn test1.js\n\u001b[36m  Untitled suite in test1.js\u001b[0m\n\u001b[33m    error: SyntaxError: Parse error\u001b[0m",
+    "timestamp": 1473875529666
+   },
+   {
+    "code": 1,
+    "output": "\u001b[37;41;1mFAIL\u001b[0m SyntaxError: Parse error\n\u001b[33m#    type: error\u001b[0m\n\u001b[33m#    file: test1.js\u001b[0m\n\u001b[33m#    subject: false\u001b[0m\n\u001b[33m#    error: \"SyntaxError: Parse error\"\u001b[0m\n\u001b[33m#    stack: \u001b[0m\n\u001b[37;41;1mFAIL 1 test executed in 0.023s, 0 passed, 1 failed, 0 dubious, 0 skipped.       \u001b[0m\n\u001b[36m\nDetails for the 1 failed test:\n\u001b[0m\nIn test1.js\n\u001b[36m  Untitled suite in test1.js\u001b[0m\n\u001b[33m    error: SyntaxError: Parse error\u001b[0m",
+    "timestamp": 1473874188512
+   },
+   {
+    "code": 1,
+    "output": "\u001b[37;41;1mFAIL\u001b[0m SyntaxError: Parse error\n\u001b[33m#    type: error\u001b[0m\n\u001b[33m#    file: test1.js\u001b[0m\n\u001b[33m#    subject: false\u001b[0m\n\u001b[33m#    error: \"SyntaxError: Parse error\"\u001b[0m\n\u001b[33m#    stack: \u001b[0m\n\u001b[37;41;1mFAIL 1 test executed in 0.022s, 0 passed, 1 failed, 0 dubious, 0 skipped.       \u001b[0m\n\u001b[36m\nDetails for the 1 failed test:\n\u001b[0m\nIn test1.js\n\u001b[36m  Untitled suite in test1.js\u001b[0m\n\u001b[33m    error: SyntaxError: Parse error\u001b[0m",
+    "timestamp": 1473874080422
+   },
+   {
+    "code": 1,
+    "output": "[object Object]",
+    "timestamp": 1473874010522
+   },
+   {
+    "code": 0,
+    "output": "Well done, this is correct.",
+    "timestamp": 1473873990770
+   },
+   {
+    "code": 0,
+    "output": "Success.",
+    "timestamp": 1473873941452
+   },
+   {
+    "code": 1,
+    "output": "\u001b[37;46;1mTest file: /home/codio/workspace/.guides/private/test1.js                       \u001b[0m\n\u001b[33m# Tags\u001b[0m\n\u001b[32;1mPASS\u001b[0m Tags \u001b[32;1m(NaN test)\u001b[0m\n\n\n\u001b[36mNew screenshot at ./screenshots/body_0.png\u001b[0m\n\nMust be your first time?\nSome screenshots have been generated in the directory ./screenshots\nThis is your 'baseline', check the images manually. If they're wrong, delete the images.\nThe next time you run these tests, new screenshots will be taken.  These screenshots will be compared to the original.\nIf they are different, PhantomCSS will report a failure.\n\nTHE END.\n\u001b[37;43;1mWARN Looks like you didn't run any tests.                                       \u001b[0m",
+    "timestamp": 1473868583206
+   },
+   {
+    "code": 1,
+    "output": "/usr/share/rpc/bash-proxy.sh: line 11: cd: ~/workspace/.guides/private: No such file or directory",
+    "timestamp": 1473868236923
+   },
+   {
+    "code": 1,
+    "output": "/usr/share/rpc/bash-proxy.sh: line 11: cd: ~/workspace/.guides/private: No such file or directory",
+    "timestamp": 1473868234092
+   },
+   {
+    "code": 1,
+    "output": "/usr/share/rpc/bash-proxy.sh: line 11: cd: ~/codio/workspace/.guides/private: No such file or directory",
+    "timestamp": 1473868178196
+   },
+   {
+    "code": 127,
+    "output": "/usr/share/rpc/bash-proxy.sh: line 11: ~/codio/workspace/.guides/private/casperjs: No such file or directory",
+    "timestamp": 1473868096293
+   },
+   {
+    "code": 127,
+    "output": "/usr/share/rpc/bash-proxy.sh: line 11: ~/workspace/.guides/private/casperjs: No such file or directory",
+    "timestamp": 1473868066792
+   },
+   {
+    "code": 127,
+    "output": "/usr/share/rpc/bash-proxy.sh: line 11: .guides/private/casperjs: No such file or directory",
+    "timestamp": 1473868015064,
+    "state": "fail"
+   }
+  ]
+ }
+]
