@@ -10,5 +10,17 @@
    "command": "bash /home/codio/workspace/.guides/private/test.sh list1",
    "points": 1
   }
+ },
+ {
+  "type": "test",
+  "taskId": "test-2352534453",
+  "source": {
+   "name": "List2",
+   "showName": false,
+   "arePartialPointsAllowed": false,
+   "instructions": "",
+   "command": "bash /home/codio/workspace/.guides/private/test.sh list2",
+   "points": 1
+  }
  }
 ]

@@ -6,6 +6,51 @@
    {
     "code": 0,
     "output": "That is correct",
+    "timestamp": 1474035378979
+   },
+   {
+    "code": 0,
+    "output": "That is correct",
+    "timestamp": 1474035169669
+   },
+   {
+    "code": 0,
+    "output": "That is correct",
+    "timestamp": 1474035149190
+   },
+   {
+    "code": 1,
+    "output": "This is not correct. Please check the png file in the file tree to see the difference.",
+    "timestamp": 1474035139626
+   },
+   {
+    "code": 0,
+    "output": "That is correct",
+    "timestamp": 1474035131010
+   },
+   {
+    "code": 0,
+    "output": "That is correct",
+    "timestamp": 1474035117548
+   },
+   {
+    "code": 1,
+    "output": "This is not correct. Please check the png file in the file tree to see the difference.",
+    "timestamp": 1474035098870
+   },
+   {
+    "code": 0,
+    "output": "That is correct",
+    "timestamp": 1474035085649
+   },
+   {
+    "code": 1,
+    "output": "That is correct",
+    "timestamp": 1474034913188
+   },
+   {
+    "code": 0,
+    "output": "That is correct",
     "timestamp": 1473893369493
    },
    {
@@ -213,6 +258,17 @@
     "output": "/usr/share/rpc/bash-proxy.sh: line 11: .guides/private/casperjs: No such file or directory",
     "timestamp": 1473868015064,
     "state": "fail"
+   }
+  ]
+ },
+ {
+  "taskId": "test-2352534453",
+  "points": 0,
+  "results": [
+   {
+    "code": 1,
+    "output": "This is not correct. Please check the png file in the file tree to see the difference.",
+    "timestamp": 1474041980315
    }
   ]
  }

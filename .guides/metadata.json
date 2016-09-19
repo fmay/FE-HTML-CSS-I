@@ -49,8 +49,26 @@
   {
    "id": "d38ca124-87de-1604-08e2-69b8663429f1",
    "title": "Thumbnail List",
-   "files": [],
-   "path": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "list2/list.html",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "list2/list.css",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [
+    "list2"
+   ],
    "type": "markdown",
    "content-file": ".guides/content/Thumbnail-List-d38c.md",
    "chapter": false,

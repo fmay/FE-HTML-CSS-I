@@ -9,5 +9,6 @@
 - The image should be floated left of the text
 - You should use the images you find in the file tree in the correct order
 
+{Check It!|assessment}(test-2352534453)
 
 

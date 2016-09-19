@@ -6,19 +6,20 @@ const log_original = console.log
 const log = function() {
   return log_original.apply(console, arguments)
 }
-console.log = function () {}
+if ( casper.cli.get('v') == '' ) 
+  console.log = function () {}
 
 // Start web server
 var phantomcss = require('phantomcss');
-var http = require('webserver').create();
-const PORT = 3000
+// var http = require('webserver').create();
+// const PORT = 3000
 
-function handleRequest(request, response){
-  response.statusCode = 200
-  response.write(fs.read('/home/codio/workspace/' + request.url))
-  response.close()
-}
-http.listen(PORT, handleRequest);
+// function handleRequest(request, response){
+//   response.statusCode = 200
+//   response.write(fs.read('/home/codio/workspace/' + request.url))
+//   response.close()
+// }
+// http.listen(PORT, handleRequest);
 
 // start a casper test
 casper.test.begin('Tags', function(test) {
@@ -29,13 +30,16 @@ casper.test.begin('Tags', function(test) {
   });
   
   phantomcss.init({
+    screenshotRoot: fs.absolute('/home/codio/workspace/screenshots/' + casper.cli.get('folder') ),
     failedComparisonsRoot: fs.absolute('/home/codio/workspace/' + casper.cli.get('folder') ),
-    mismatchTolerance: 0.2,
+    mismatchTolerance: 0.15,
     rebase: casper.cli.get('rebase')
   });
-
+var system = require('system');
+var env = system.env;
+  
   // open page
-  casper.start('http://localhost:3000/' + casper.cli.get('folder') + '/list.html');
+  casper.start('http://' + env['CODIO_BOX_DOMAIN'] + '/' + casper.cli.get('folder') + '/list.html');
 
   // set your preferred view port size
   casper.viewport(1024, 768);

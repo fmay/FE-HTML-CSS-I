@@ -1,4 +1,4 @@
-
+ok
 // Suppress console.log
 const log_original = console.log
 
@@ -13,11 +13,35 @@ var phantomcss = require('phantomcss');
 var http = require('webserver').create();
 const PORT = 3000
 
-function handleRequest(request, response){
-  response.statusCode = 200
-  response.write(fs.read('/home/codio/workspace/' + request.url))
-  response.close()
+function lookupMime(filename, callback) {
+  if (filename.indexOf('.css') !== -1) {
+    callback('text/css') 
+    return
+  }
+  require('child_process').execFile('file',
+                                    ['-b', '--mime-type', filename ],
+                                    null,
+                                   function(err, stdout, stderr) {
+    callback(stdout)
+  } )
 }
+
+function handleRequest(request, response) {
+  const filename = '/home/codio/workspace' + request.url
+  response.statusCode = 200;
+  lookupMime(filename, function(contentType) {
+    response.setHeader("Content-Type", contentType)
+    readMode = 'r'
+    if (contentType.indexOf('image') === 0 ) {
+      response.setEncoding('binary')
+      readMode = 'b'
+    }
+    const content = require('fs').read(filename, {mode: readMode})
+    response.write(content);
+    response.close();
+  })
+}
+
 http.listen(PORT, handleRequest);
 
 // start a casper test
@@ -29,14 +53,14 @@ casper.test.begin('Tags', function(test) {
   });
   
   phantomcss.init({
-    //screenshotRoot: fs.absolute('/home/codio/workspace/.guides/x'),
-    //comparisonResultRoot: fs.absolute('/home/codio/workspace/.guides/y'),
-    failedComparisonsRoot: fs.absolute('/home/codio/workspace/list1'),
+    screenshotRoot: fs.absolute('/home/codio/workspace/screenshots/' + casper.cli.get('folder') ),
+    failedComparisonsRoot: fs.absolute('/home/codio/workspace/' + casper.cli.get('folder') ),
+    mismatchTolerance: 0.2,
     rebase: casper.cli.get('rebase')
   });
 
   // open page
-  casper.start('http://localhost:3000/list1/list.html');
+  casper.start('http://localhost:3000/' + casper.cli.get('folder') + '/list.html');
 
   // set your preferred view port size
   casper.viewport(1024, 768);
@@ -59,7 +83,7 @@ casper.test.begin('Tags', function(test) {
   casper.run(function() {
     var exitCode = 0;
     if (failures.length > 0) {
-      log('failed')
+      log('This is not correct. Please check the png file in the file tree to see the difference.')
       exitCode = 1;
     } else {
       log('That is correct')
